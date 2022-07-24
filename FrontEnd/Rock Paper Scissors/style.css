@@ -1,0 +1,18 @@
+.game{
+    display: flex;
+    margin: auto;
+    margin-top: 130px;
+    padding: 50px;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#rock,#paper,#scissors{
+    border-radius: 8px;
+    background-color: chartreuse;
+    color: black;
+}

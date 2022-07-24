@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
+
+*{
+    margin: 0;          /* remove browser default style */
+    padding: 0;
+}
+body{
+    background-color: #67bb5c;
+}
+
+nav{
+    background-color: bisque;
+    color: black;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+nav ul{
+    list-style-type: none;  /* it is used to remove circle default style of li */
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.child{
+    display: grid;  /* add space in between */
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Ibarra Real Nova';
+}
+
+.box{
+    border: 1px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(165, 242, 245);
+}
+
+.gameinfo{
+    font-size: 25px;
+}
+
+.info{
+    padding: 0 35px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.r-0{
+    border-right: 0;
+}
+.l-0{
+    border-left: 0;
+}
+.t-0{
+    border-top: 0;
+}
+.b-0{
+    border-bottom: 0;
+}
+
+#reset{
+
+    margin: 16px 40px;
+    padding: 1px 15px;
+    background-color: rgb(60, 60, 226);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+
+@media screen and (max-width: 950px)
+{
+    .container{
+        flex-wrap: wrap;
+    }
+    .info{
+        margin-top: 34px;
+    }
+    .info h1{
+        font-size: 1.5rem;
+    }
+    .child{
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+}
